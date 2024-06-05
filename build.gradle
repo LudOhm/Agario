@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+application {
+    mainClassName = 'gui.Game'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.10.1'
+    testImplementation 'junit:junit:4.12'
+}
+
+task runServer(type: JavaExec) {
+    group = 'application'
+    description = 'Starts the game server.'
+    main = 'network.GameServer'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runClient(type: JavaExec) {
+    group = 'application'
+    description = 'Starts the game client.'
+    main = 'gui.Game' 
+    classpath = sourceSets.main.runtimeClasspath
+}
