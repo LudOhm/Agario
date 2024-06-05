@@ -2,7 +2,7 @@
 
 ## Présentation
 
-Jeu de type Agar.io à jouer en solo ou en ligne
+Jeu de type Agar.io réalisé en groupe à 5 pour le cours projet de programmation de L2 au S4.
 
 ## Exécution, compilation mode solo et online inclu
 
